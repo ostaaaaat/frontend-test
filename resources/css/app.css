@@ -1,0 +1,155 @@
+.container {
+    padding: 3px;
+}
+
+.sort-controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+}
+
+.sort-controls label {
+    margin-right: 1.5px;
+}
+
+.sort-controls select {
+    margin-right: 5px;
+    flex: 1;
+    min-width: 24px;
+    max-width: max-content;
+}
+
+.comments-list {
+    margin-bottom: 3px;
+}
+
+.comment-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 4.5px;
+}
+
+.delete-button {
+    padding: 3px 6px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.delete-button.active {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.delete-button:disabled {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.pagination button {
+    padding: 3px 6px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+}
+
+.comment-form {
+    border-top: 1px solid #ddd;
+    padding-top: 6px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 3px; 
+    max-width: 320px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1.5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.3px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 160px;
+    resize: vertical;
+}
+
+.add-comment-button {
+    padding: 4px 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 1.5px;
+    width: min-content;
+}
+
+.add-comment-button.active {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.add-comment-button:disabled {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+    .sort-controls {
+        flex-direction: column;
+    }
+
+    .sort-controls select {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .comment-form {
+        padding-top: 10px;
+    }
+
+    .add-comment-button {
+        width: 100%;
+    }
+    
+}
